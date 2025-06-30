@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+<h1 align="center">📝 ToDo App Pro</h1>
+<p align="center">
+  Um projeto completo de lista de tarefas feito com <strong>Next.js</strong>, <strong>TypeScript</strong> e <strong>TailwindCSS</strong>, com foco em produtividade e boas práticas.
+</p>
 
-First, run the development server:
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/HEROjesus/Todo-list?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/last-commit/HEROjesus/Todo-list?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/license/HEROjesus/Todo-list?style=for-the-badge"/>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Funcionalidades
+
+- ✅ Criar tarefas com descrição, status e tipo
+- ✅ Filtrar tarefas por status (Not Started, Pending, etc)
+- ✅ Editar e excluir tarefas
+- ✅ Persistência com LocalStorage
+- ✅ Interface responsiva e moderna com TailwindCSS
+
+
+## 🚀 Tecnologias utilizadas
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+
+---
+
+## 📂 Estrutura do projeto
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+.
+├── components/
+│   ├── TaskForm.tsx
+│   ├── TaskList.tsx
+│   └── StatusTabs.tsx
+├── types/
+│   └── task.ts
+├── app/
+│   └── page.tsx
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+````
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧠 Aprendizados
 
-To learn more about Next.js, take a look at the following resources:
+- Uso de `useState`, `useEffect`, props e lifting state
+- Imutabilidade com `.map()` e `.filter()`
+- Estruturação com TypeScript e tipos literais
+- Organização de componentes reutilizáveis
+- Persistência no `localStorage`
+- Filtragem e reatividade de listas com React
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Como rodar localmente
 
-## Deploy on Vercel
+```bash
+# Clone o projeto
+git clone https://github.com/HEROjesus/Todo-list.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Acesse a pasta
+cd Todo-list
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Instale as dependências
+npm install
+
+# Rode o servidor de desenvolvimento
+npm run dev
+````
+
+> 💡 O app ficará disponível em `http://localhost:3000`
+
+---
+
+## 🌐 Deploy
+
+[🔗 Vercel (opcional)](https://vercel.com/) – Totalmente integrado com projetos Next.js.
+
+---
+
+## 📌 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 🙋‍♂️ Autor
+
+Feito com 💙 por Rafael ([@HEROjesus](https://github.com/HEROjesus))
+
+---
