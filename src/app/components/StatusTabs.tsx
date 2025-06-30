@@ -8,11 +8,11 @@ interface StatusTabsProps {
 }
 
 const labels: Record<Status, string> = {
-  all: 'All',
-  not_started: 'Not Started',
-  pending: 'Pending',
-  in_progress: 'In Progress',
-  completed: 'Completed',
+  all: 'Tudo',
+  not_started: 'Não iniciado',
+  pending: 'Pendente',
+  in_progress: 'Em progresso',
+  completed: 'Completado',
 }
 
 export default function StatusTabs({ current, onChange }: StatusTabsProps) {
@@ -23,7 +23,7 @@ export default function StatusTabs({ current, onChange }: StatusTabsProps) {
           key={value}
           onClick={() => onChange(value as Status)}
           className={`pb-2 ${
-            current === value ? 'border-b-2 border-black font-bold' : 'text-gray-500'
+            current === value ? 'border-b-2 border-black font-bold' : 'text-gray-500 hover:text-black trasition-colors duration-600'
           }`}
         >
           {label}

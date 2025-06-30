@@ -60,10 +60,10 @@ export default function TaskForm({ onAdd, editingTask }: TaskFormProps) {
         onChange={(e) => setStatus(e.target.value as Task["status"])}
         className="p-2 border rounded"
       >
-        <option value="not_started">Not Started</option>
-        <option value="pending">Pending</option>
-        <option value="in_progress">In Progress</option>
-        <option value="completed">Completed</option>
+        <option value="not_started">Não iniciado</option>
+        <option value="pending">Pendente</option>
+        <option value="in_progress">Em Progresso</option>
+        <option value="completed">Completado</option>
       </select>
 
       <select
@@ -71,8 +71,8 @@ export default function TaskForm({ onAdd, editingTask }: TaskFormProps) {
         onChange={(e) => setType(e.target.value as "personal" | "work")}
         className="p-2 border rounded"
       >
-        <option value="personal">Personal</option>
-        <option value="work">Work</option>
+        <option value="personal">Pessoal</option>
+        <option value="work">Trabalho</option>
       </select>
 
       <button
